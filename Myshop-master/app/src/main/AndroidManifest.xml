@@ -20,11 +20,11 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.READ_SMS" />
 
-    
     <application
         android:name=".CniaoApplication"
         android:allowBackup="true"
@@ -40,7 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".WareListActivity" />
         <activity android:name=".MyFavSendActivity" />
         <activity android:name=".MyProblemActivity" />
@@ -70,14 +69,12 @@
             android:name=".RegActivity"
             android:label="@string/title_activity_reg" />
 
-
         <!-- Ping++ sdk -->
         <activity
             android:name="com.pingplusplus.android.PaymentActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!-- 微信支付 sdk ，也是 Ping++ sdk 调用入口 -->
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信支付 sdk ，也是 Ping++ sdk 调用入口 -->
         <activity-alias
             android:name=".wxapi.WXPayEntryActivity"
             android:exported="true"
@@ -246,7 +243,8 @@
             android:value="e73deba501fb3faaa1b5c2729e3eedbe" />
 
         <activity android:name=".OrderDetailActivity" />
-        <activity android:name=".MyFavoriteActivity"></activity>
+        <activity android:name=".MyFavoriteActivity" />
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>
